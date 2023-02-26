@@ -8,15 +8,15 @@ import Search from "./Components/Search/Search";
 import Subscriber from "./Components/Subscriber/Subscriber";
 import Support from "./Components/Support/Support";
 import Traveler from "./Components/Traveler/Traveler";
-import './style/main.css'
+import "./style/main.css";
 
 const App = () => {
   return (
     <>
       <Navbar />
-      {/* <Home />
+      <Home />
       <Search />
-      <Support />
+      {/* <Support />
       <Info />
       <Lounge />
       <Traveler />
