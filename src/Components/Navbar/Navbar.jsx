@@ -55,17 +55,18 @@ const Navbar = () => {
             <li onClick={removeShowNavbar}>
               <MdOutlineCancel className="cancel__icon" />
             </li>
-            <li className="listItem">Home</li>
-            <li className="listItem">About</li>
-            <li className="listItem">Offers</li>
-            <li className="listItem">Seats</li>
-            <li className="listItem">Destinations</li>
+            <li onClick={removeShowNavbar} className="listItem">Home</li>
+            <li onClick={removeShowNavbar} className="listItem">About</li>
+            <li onClick={removeShowNavbar} className="listItem">Offers</li>
+            <li onClick={removeShowNavbar} className="listItem">Seats</li>
+            <li onClick={removeShowNavbar} className="listItem">Destinations</li>
+            <li onClick={removeShowNavbar} className="listItem"> <button className="btn flex btn__one">Contact</button></li>
           </ul>
 
-          <button className="btn flex contactBtn__one">Contact</button>
+          {/* <button className="btn flex btn__one">Contact</button> */}
         </div>
 
-        <button className="btn flex contactBtn__two">Contact</button>
+        {/* <button className="btn flex contactBtn__two">Contact</button> */}
 
         {/* Menu bars */}
         <div className="toggle__Icon" onClick={handleShowNavbar}>

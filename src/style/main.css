@@ -210,7 +210,8 @@ h2 {
   .navBar .navBar-Two .navBar-Menu .menu {
     flex-direction: column;
     gap: 0.5rem;
-    text-align: center;
+    position: relative;
+    left: 60px;
   }
   .navBar .navBar-Two .navBar-Menu .menu .cancel__icon {
     padding: 0.5rem;
@@ -250,4 +251,101 @@ h2 {
 .navBar .navBar-Two .handleShowNavbar {
   right: 50%;
   transition: 0.8 ease-in-out;
+}
+
+.home {
+  padding-top: 12rem;
+  text-align: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.home .mainText {
+  color: var(--blackColor);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 0.1rem;
+}
+.home .homeImage {
+  width: 100%;
+  margin: 1rem auto 0;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rem;
+}
+.home .homeImage .videoDev {
+  width: 25rem;
+}
+.home .homeImage .videoDev .video {
+  border-radius: 15rem;
+}
+.home .homeImage .plane {
+  position: absolute;
+  width: 25rem;
+  top: -4rem;
+  transition: 0.5s ease-in;
+}
+
+.search .searchContainer {
+  width: 100%;
+  padding: 1.5rem;
+  border: 2px solid var(--greyBg);
+  border-radius: 2rem;
+  row-gap: 0.4rem;
+}
+.search .btns {
+  width: 100%;
+  flex-direction: column;
+  margin: auto;
+  padding: 0.4rem;
+  background: var(--secondaryColor);
+  border-radius: 1rem;
+}
+.search .btns .singleButton {
+  text-align: center;
+  padding: 0.5rem 0.8rem;
+  font-size: 16px;
+  width: 80%;
+  border-radius: 2rem;
+}
+.search .btns .singleButton:hover {
+  background: var(--colorOne);
+  font-weight: 800;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+.search .btns .active {
+  background: var(--colorOne);
+  font-weight: 800;
+}
+.search .searchInputs {
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.3rem;
+}
+.search .searchInputs .singleInput .iconDev {
+  background: var(--secondaryColor);
+  border-radius: 1rem;
+  padding: 0.3rem 0.3rem;
+  margin-right: 0.8rem;
+}
+.search .searchInputs .singleInput .texts h4 {
+  padding-top: 0;
+  padding-bottom: 0.3rem;
+  color: var(--blackColor);
+}
+.search .searchInputs .singleInput .texts input {
+  border: none;
+  width: 90%;
+  outline: none;
+  background: transparent;
+}
+.search .searchInputs .singleInput .texts input::-moz-placeholder {
+  font-size: 10px;
+  opacity: 0.5px;
+}
+.search .searchInputs .singleInput .texts input::placeholder {
+  font-size: 10px;
+  opacity: 0.5px;
 }/*# sourceMappingURL=main.css.map */
