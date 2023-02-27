@@ -10,10 +10,20 @@ import flightLogo from "../../assets/flight-logo.png";
 
 const Navbar = () => {
   const [active, setIsActive] = useState("navBar-Menu");
+  const [addBlack, setAddBlack] = useState("navBar-Two");
 
   const handleShowNavbar = () => {
     setIsActive("navBar-Menu handleShowNavbar");
   };
+
+  const handleShowBlack = () => {
+    if (window.scrollY > 10) {
+      setAddBlack("navBar-Two navbar__bg");
+    } else {
+      setAddBlack("navBar-Two");
+    }
+  };
+  window.addEventListener("scroll", handleShowBlack);
 
   const removeShowNavbar = () => {
     setIsActive("navBar-Menu");
@@ -21,6 +31,7 @@ const Navbar = () => {
 
   return (
     <div className="navBar flex">
+      {/* NavBar One */}
       <div className="navBar-One flex">
         {/* Logo */}
         <div className="flight-logo">
@@ -44,8 +55,8 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Logo section */}
-      <div className="navBar-Two flex">
+      {/* NavBar Two Logo section */}
+      <div className={addBlack}>
         <div className="logo__div">
           <img src={flightLogo} alt="flight" className="logo" />
         </div>
@@ -55,12 +66,25 @@ const Navbar = () => {
             <li onClick={removeShowNavbar}>
               <MdOutlineCancel className="cancel__icon" />
             </li>
-            <li onClick={removeShowNavbar} className="listItem">Home</li>
-            <li onClick={removeShowNavbar} className="listItem">About</li>
-            <li onClick={removeShowNavbar} className="listItem">Offers</li>
-            <li onClick={removeShowNavbar} className="listItem">Seats</li>
-            <li onClick={removeShowNavbar} className="listItem">Destinations</li>
-            <li onClick={removeShowNavbar} className="listItem"> <button className="btn flex btn__one">Contact</button></li>
+            <li onClick={removeShowNavbar} className="listItem">
+              Home
+            </li>
+            <li onClick={removeShowNavbar} className="listItem">
+              About
+            </li>
+            <li onClick={removeShowNavbar} className="listItem">
+              Offers
+            </li>
+            <li onClick={removeShowNavbar} className="listItem">
+              Seats
+            </li>
+            <li onClick={removeShowNavbar} className="listItem">
+              Destinations
+            </li>
+            <li onClick={removeShowNavbar} className="listItem">
+              {" "}
+              <button className="btn flex btn__one">Contact</button>
+            </li>
           </ul>
 
           {/* <button className="btn flex btn__one">Contact</button> */}

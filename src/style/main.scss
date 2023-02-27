@@ -8,7 +8,7 @@
   font-family: "Dancing", sans-serif;
 }
 
-//Root color
+//Root color =============>
 :root {
   --primaryColor: hsl(225, 50%, 48%);
   --secondaryColor: hsl(180, 17%, 95%);
@@ -114,7 +114,6 @@ h2 {
 }
 
 //NavBar Section =============>
-
 .navBar {
   position: fixed;
   flex-direction: column;
@@ -297,6 +296,12 @@ h2 {
       transition: 0.8 ease-in-out;
     }
   }
+
+  .navbar__bg {
+    padding: 1.5rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.08) 0px 4px 6px 2px;
+  }
 }
 
 //Home Section =============>
@@ -331,7 +336,7 @@ h2 {
       position: absolute;
       width: 25rem;
       top: -4rem;
-      transition: .5s ease-in;
+      transition: 0.5s ease-in;
     }
   }
 }
@@ -388,24 +393,108 @@ h2 {
         margin-right: 0.8rem;
       }
 
-      .texts{
-        h4{
+      .texts {
+        h4 {
           padding-top: 0;
-          padding-bottom: .3rem;
+          padding-bottom: 0.3rem;
           color: var(--blackColor);
         }
-        input{
+        input {
           border: none;
           width: 90%;
           outline: none;
           background: transparent;
 
-          &::placeholder{
+          &::placeholder {
             font-size: 10px;
-            opacity: .5px;
+            opacity: 0.5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//Support Section =============>
+.support {
+  .section-Container {
+    .title__dev {
+      text-align: center;
+      small {
+        letter-spacing: 0.4rem;
+        text-transform: uppercase;
+        color: var(--blackColor);
+        font-size: 16px;
+      }
+    }
+
+    .info__dev {
+      margin-top: 3rem;
+      gap: 1.5rem;
+      .text__dev {
+        gap: 1.5rem;
+        .single__info {
+          .number {
+            background: var(--secondaryColor);
+            padding: 0.2rem 0.2rem;
+            border-radius: 0.3rem;
+            font-weight: 700;
+            text-align: center;
+          }
+        }
+      }
+      .image__dev {
+        margin: auto;
+        .image__radius {
+          border-radius: 35px;
+        }
+        img {
+          width: 100px;
+        }
+      }
+    }
+  }
+}
+
+//Info Section =============>
+.info {
+  background: var(--secondaryColor);
+  .info-container {
+    .title__dev {
+      flex-direction: column;
+      text-align: center;
+      gap: 0.5rem;
+      justify-content: space-between;
+    }
+    .cards__div {
+      gap: 2rem;
+      margin-top: 3rem;
+      .single__card {
+        width: 90%;
+        height: 300px;
+        background: var(--whiteColor);
+        padding: 3rem 2rem;
+        border-radius: 10rem;
+        gap: 0.5rem;
+        text-align: center;
+        max-width: 250px;
+        margin: auto;
+
+        .icon__div {
+          padding: 1.5rem 1.3rem;
+          margin: auto;
+          border-radius: 3rem;
+          background: var(--secondaryColor);
+          .icon {
+            width: max-content;
+            justify-content: center;
           }
         }
 
+        .card__title {
+          text-transform: uppercase;
+          font-weight: 700;
+        }
       }
     }
   }
