@@ -8,7 +8,7 @@ Collection of Accessible React UI Components using TailwindCSS.
 
 </div>
 
-![](https://vitejs.dev/)
+- https://vitejs.dev/
 
 - Documentation: [vitejs.dev](https://vitejs.dev/)
 - NPM: [@vechaiui/react](https://www.npmjs.com/package/@vechaiui/react)
