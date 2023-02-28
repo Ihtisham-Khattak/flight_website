@@ -499,3 +499,36 @@ h2 {
     }
   }
 }
+
+//Lounge Section =============>
+.lounge {
+  .section__container {
+    gap: 1.3rem;
+
+    .img__dev {
+      margin: auto;
+      img {
+        width: 100%;
+        max-width: 430px;
+        border-radius: 10%;
+      }
+    }
+
+    .text__dev {
+      text-align: center;
+    }
+    .grids {
+      margin-top: 1.3rem;
+      gap: 1.3rem;
+
+      .single__grid {
+        .grid__title {
+          color: var(--blackColor);
+          font-weight: bold;
+          display: block;
+          padding-bottom: 1.3rem;
+        }
+      }
+    }
+  }
+}
