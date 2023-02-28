@@ -425,4 +425,29 @@ h2 {
 .info .info-container .cards__div .single__card .card__title {
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.lounge .section__container {
+  gap: 1.3rem;
+}
+.lounge .section__container .img__dev {
+  margin: auto;
+}
+.lounge .section__container .img__dev img {
+  width: 100%;
+  max-width: 430px;
+  border-radius: 10%;
+}
+.lounge .section__container .text__dev {
+  text-align: center;
+}
+.lounge .section__container .grids {
+  margin-top: 1.3rem;
+  gap: 1.3rem;
+}
+.lounge .section__container .grids .single__grid .grid__title {
+  color: var(--blackColor);
+  font-weight: bold;
+  display: block;
+  padding-bottom: 1.3rem;
 }/*# sourceMappingURL=main.css.map */
