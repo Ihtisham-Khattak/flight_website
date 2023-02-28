@@ -18,11 +18,12 @@ Try [Tails Devtools](https://github.com/vechai/tails-devtools) - Browser extensi
 ## ✨ Features
 
 - 📦 A set of accessibility React components & pre-designed headlessui + radix-ui components.
-- 🛠️ Written in TypeScript.
-- 🌙 Built-in Dark mode.
+- 🛠️ SASS styling.
+- 🌙 Light and Dark mode.
 - 🌈 Powerful theme customization.
 
-## Installation
+## Installation of Vite
+
 
 ```
 npm i @vechaiui/core @vechaiui/react @tailwindcss/forms
